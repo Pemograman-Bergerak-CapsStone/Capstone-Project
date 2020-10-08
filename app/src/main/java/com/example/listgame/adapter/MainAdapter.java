@@ -41,10 +41,10 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
         holder.year.setText(String.valueOf(mainModels.getYear()));
         holder.games.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 Intent intent = new Intent(context, DetailActivity.class);
-                intent.putExtra("nama_game", holder.namaGame.getText().toString().trim());
-                intent.putExtra("tahun_rilis", holder.year.getText().toString().trim());
+                intent.putExtra("nama_game", holder.namaGame.getText().toString());
+                intent.putExtra("tahun_rilis", holder.year.getText().toString());
                 context.startActivity(intent);
             }
         });

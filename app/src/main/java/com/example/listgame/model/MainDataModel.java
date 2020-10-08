@@ -7,7 +7,7 @@ import java.util.List;
     public class MainDataModel {
         public static List<MainModel> gamesList() {
             MainModel ff = new MainModel("Final Fantasy", 1987);
-            MainModel genshin = new MainModel("Genshi Impact", 2020);
+            MainModel genshin = new MainModel("Genshin Impact", 2020);
             MainModel mobileLegend = new MainModel("Mobile Legend", 2016);
             MainModel aov = new MainModel("Arena Of Valor", 2017);
 
