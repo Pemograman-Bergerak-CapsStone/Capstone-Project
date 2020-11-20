@@ -12,10 +12,9 @@
             android:name=".AboutActivity"
             android:label="About Us"/>
         <activity
-            android:name=".DetailActivity"></activity>
+            android:name=".DetailActivity" />
         <activity
-            android:name=".SplashActivity"
-            android:theme="@style/SplashScreenStyle">
+            android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
