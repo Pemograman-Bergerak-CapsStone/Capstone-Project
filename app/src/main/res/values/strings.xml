@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">List Game</string>
+    <string name="action_about">About Us</string>
+    <string name="text_about">Made by :
+    \n\n 1. Jose Fernando
+    \n 2. M. Rifki Ali
+    \n 3. Fawan Panji Miranta
+    \n 4. Berliana Septiyanti</string>
+    <string name="action_notif">Set Notification</string>
+</resources>
