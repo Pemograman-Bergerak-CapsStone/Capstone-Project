@@ -7,4 +7,44 @@
     \n 3. Fawan Panji Miranta
     \n 4. Berliana Septiyanti</string>
     <string name="action_notif">Set Notification</string>
+
+    <string name="login_progress" type="id">Login Progress</string>
+    <string name="login_form" type="id">login form</string>
+    <string name="email_login_form" type="id">Layout</string>
+    <string name="logo_container" type="id">Logo</string>
+    <string name="email" type="id">email</string>
+    <string name="password" type="id">password</string>
+    <string name="passwordRepeat" type="id">password repeat</string>
+    <string name="nameBox" type="id">name</string>
+    <string name="phoneBox" type="id">phone</string>
+    <string name="email_sign_in_button" type="id">sign in</string>
+    <string name="register_button" type="id">register</string>
+    <string name="signup_button" type="id">sign up</string>
+    <string name="signin_button" type="id">sign in</string>
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_password_repeat">Password (Diulang)</string>
+    <string name="prompt_name">Nama Lengkap</string>
+    <string name="prompt_phone">Nomor Telepon</string>
+    <string name="action_sign_in">Masuk atau Mendaftar</string>
+    <string name="action_sign_in_short">Masuk</string>
+    <string name="action_register">Buat akun baru?</string>
+    <string name="action_have_account">Sudah memiliki akun?</string>
+    <string name="action_submit">Kirim</string>
+    <string name="error_invalid_email">Alamat email tidak valid</string>
+    <string name="error_unavailable_email">Email sudah pernah terdaftar</string>
+    <string name="error_invalid_password">Password tidak valid</string>
+    <string name="error_invalid_password_repeat">Ulangi password dengan benar</string>
+    <string name="error_incorrect_password">Password yang Anda masukkan salah</string>
+    <string name="error_old_password">Password lama salah</string>
+    <string name="error_field_required">Kolom ini tidak boleh dikosongi</string>
+    <string name="permission_rationale">"Izin kontak diperlukan untuk menyediakan penyelesaian email."</string>
+    <string name="login_header_information">Isilah form ini dengan akun login anda,
+        atau buat akun terlebih dahulu untuk dapat menggunakan aplikasi ini.</string>
+
+    <string name="txt_welcome">Terima Kasih Telah Masuk Ke Aplikasi List Game Sampai Jumpa!</string>
+
+    <string name="btn_logout">Logout</string>
+    <string name="action_logout">Logout</string>
 </resources>

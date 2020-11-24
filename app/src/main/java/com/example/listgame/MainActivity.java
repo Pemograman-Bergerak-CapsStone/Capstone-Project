@@ -4,11 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.app.AlarmManager;
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
-import android.content.Context;
+
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -87,7 +83,12 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, AlarmActivity.class);
             startActivity(intent);
             return true;
+        } else if(item.getItemId() == R.id.action_logout){
+            Intent intent = new Intent(MainActivity.this,LogoutActivity.class);
+            startActivity(intent);
+            return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
 

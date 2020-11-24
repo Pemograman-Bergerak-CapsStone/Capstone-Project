@@ -47,10 +47,11 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, DetailActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.putExtra("title",resultsItems.get(position).getName());
+                intent.putExtra("rating",resultsItems.get(position).getRating());
                 intent.putExtra("tahun rilis",resultsItems.get(position).getReleased());
                 intent.putExtra("imageUrl",resultsItems.get(position).getBackgroundImage());
-                intent.putExtra("metacritic",resultsItems.get(position).getMetacritic());
                 context.startActivity(intent);
             }
         });

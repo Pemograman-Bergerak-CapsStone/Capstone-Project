@@ -1,25 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-    <TextView
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Name Game"
-        android:id="@+id/tv_nama_game"
-        android:gravity="center"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tahun Rilis"
-        android:id="@+id/tv_year"
-        android:gravity="center"
-        android:textSize="20dp"
-        android:textColor="@android:color/black"/>
+        android:layout_height="180dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
 
-</LinearLayout>
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:contentScrim="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        app:toolbarId="@+id/toolbar">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/iv_detail"
+        android:src="@android:drawable/arrow_up_float"
+        android:scaleType="fitXY" />
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <include layout="@layout/content_scrolling" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
